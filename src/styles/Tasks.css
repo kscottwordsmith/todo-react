@@ -1,0 +1,44 @@
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+form {
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 3px;
+    width: 300px;
+}
+
+input {
+    height: 50px;
+    width: 300px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    padding-left: 3px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#topside {
+    min-height: 85px;
+    border-bottom: 1px solid lightgrey;
+}
+
+#bottomside {
+    display: flex;
+    justify-content: space-between;
+}
+
+#activeNum {
+    font-size: 12px;
+}
+
+.filterButton {
+    border: none;
+    cursor: pointer;
+}
+
+.filterButton:focus {
+    outline: none;
+}

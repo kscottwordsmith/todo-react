@@ -1,0 +1,43 @@
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+.taskcontain div{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid lightgrey;
+}
+
+span {
+    font-size: 20px;
+    font-family: "Helvetica", sans-serif;
+}
+
+.fa-circle {
+    opacity: 0.5;
+    margin-right: 7px;
+}
+
+.done {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fa-check-circle {
+    margin-right: 7px;
+}
+
+.delButton {
+    width: 70px;
+    background: none;
+    border: none;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.delButton:focus {
+    outline: none;
+}
