@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import { connect } from 'react-redux'
-import { addTask, changeFilter } from '../actions/tasks'
+import { addTask, changeFilter, deleteComplete } from '../actions/tasks'
 import TodoList from './TodoList'
 import '../styles/Tasks.css'
 
@@ -39,6 +39,11 @@ class Tasks extends Component {
         changeFilter("complete")
     }
 
+    deleteComp = (e) => {
+        e.preventDefault()
+        deleteComplete()
+    }
+
     render() {
         const tasks = this.props.tasks.map((t, i) => (
             <TodoList {...t} key={"listitem" + i}/>
@@ -63,6 +68,7 @@ class Tasks extends Component {
                     <button onClick={this.filterAll} className="filterButton">All</button>
                     <button onClick={this.filterIncomplete} className="filterButton">Incomplete</button>
                     <button onClick={this.filterComplete} className="filterButton">Complete</button>
+                    <button onClick={this.deleteComp} className="filterButton">Clear Complete</button>
                 </div>
             </Fragment>
         )

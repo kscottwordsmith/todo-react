@@ -4,7 +4,7 @@ html {box-sizing: border-box;}
 .taskcontain div{
     display: flex;
     justify-content: space-between;
-    width: 300px;
+    width: 350px;
     padding-top: 3px;
     padding-bottom: 3px;
     border-bottom: 1px solid lightgrey;

@@ -32,3 +32,9 @@ export function changeFilter(filter) {
         payload: filter
     })
 }
+
+export function deleteComplete() {
+    store.dispatch({
+        type: "DELETE_COMPLETE"
+    })
+}

@@ -4,12 +4,12 @@ html {box-sizing: border-box;}
 form {
     border-bottom: 1px solid lightgrey;
     padding-bottom: 3px;
-    width: 300px;
+    width: 350px;
 }
 
 input {
     height: 50px;
-    width: 300px;
+    width: 350px;
     font-size: 15px;
     border-radius: 10px;
     border: 1px solid lightgrey;
