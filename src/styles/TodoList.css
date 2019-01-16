@@ -13,6 +13,7 @@ html {box-sizing: border-box;}
 span {
     font-size: 20px;
     font-family: "Helvetica", sans-serif;
+    font-weight: lighter;
 }
 
 .fa-circle {
@@ -36,8 +37,13 @@ span {
     color: red;
     font-size: 15px;
     cursor: pointer;
+    opacity: 0.1;
 }
 
 .delButton:focus {
     outline: none;
+}
+
+.delButton:hover{
+    opacity: 1;
 }

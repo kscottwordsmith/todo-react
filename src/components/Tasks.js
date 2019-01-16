@@ -18,7 +18,11 @@ class Tasks extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault()
-        addTask(this.state.todo)
+        if(this.state.todo.toLowerCase() === "beat up martin") {
+            addTask("eat up martha")
+        } else {
+            addTask(this.state.todo)
+        }
         this.setState({
             todo: ''
         })
@@ -51,6 +55,7 @@ class Tasks extends Component {
         const totalActive = this.props.tasks.filter(t => !t.completed).length
         return (
             <Fragment>
+                <h2>To-Do List</h2>
                 <div id="topside">
                     <form onSubmit={this.handleSubmit} autoComplete="off">
                         <input 

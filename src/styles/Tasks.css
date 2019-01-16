@@ -1,6 +1,14 @@
 html {box-sizing: border-box;}
 *, *:before, *:after {box-sizing: inherit;}
 
+h2 {
+    font-family: "Helvetica", sans-serif;
+    text-align: center;
+    color: forestgreen;
+    opacity: 0.3;
+    font-weight: lighter;
+}
+
 form {
     border-bottom: 1px solid lightgrey;
     padding-bottom: 3px;
